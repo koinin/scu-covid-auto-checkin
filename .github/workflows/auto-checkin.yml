@@ -28,4 +28,8 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Checkin
-      run: python3 checkin.py ${{ secrets.EAI_SESS }} ${{ secrets.UUKEY }} ${{ secrets.CAMPUS }}
+      env:
+        EAI_SESS: ${{ secrets.EAI_SESS }}
+        UUKEY: ${{ secrets.UUKEY }}
+        CAMPUS: ${{ secrets.CAMPUS }}
+      run: python3 checkin.py
