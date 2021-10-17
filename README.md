@@ -47,11 +47,11 @@
 
 修改`.github/workflows/auto-checkin.yml`
 
-更改`cron`配置，参考：[wiki](https://zh.wikipedia.org/wiki/Cron)
+更改`cron`配置，参考：[wiki](https://zh.wikipedia.org/wiki/Cron)
 
 默认的配置是：每天早上8点左右执行脚本
 
-**注意** 执行的时间是UTC时间，北京时间需要在cron对应的小时上再**+8**，所以`0 0 * * *`代表了在每天UTC时间0点0分时触发事件，即每天北京时间8点触发。
+**注意** 执行的时间是UTC时间，北京时间需要在cron对应的小时上再 ** +8 ** ，所以`0 0 * * *`代表了在每天UTC时间0点0分时触发事件，即每天北京时间8点触发。
 
 ```yaml
 on:
