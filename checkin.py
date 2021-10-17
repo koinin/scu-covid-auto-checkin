@@ -8,25 +8,22 @@ import datetime
 import time
 import requests
 
-campus = 'wangjiang'
-
 
 def generate_cookies_dict() -> dict:
-    if len(sys.argv) != 4:
-        print('[ERROR] usage: python3 checkin.py <eai-sess> <UUkey> <campus>')
+    try:
+        cookies_dict = {
+            'eai-sess': os.environ['EAI_SESS'],
+            'UUkey': os.environ['UUKEY']
+        }
+        return cookies_dict
+    except Exception as ept:
+        print(f'[ERROR] 运行错误：{ept}')
         exit()
-    cookies_dict = {
-        'eai-sess': sys.argv[1],
-        'UUkey': sys.argv[2]
-    }
-    global campus
-    campus = sys.argv[3]
-    return cookies_dict
 
 
 def modify_json(res_json: dict) -> dict:
     # load default geo_api_info
-    with open(os.path.join('resorce', f'{campus}.json'), 'r') as ifile:
+    with open(os.path.join('resorce', f'{os.environ["CAMPUS"]}.json'), 'r') as ifile:
         res_json['geo_api_info'] = json.load(ifile)
 
     res_json['province'] = res_json['geo_api_info']['addressComponent']['province']
