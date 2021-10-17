@@ -23,7 +23,7 @@ def generate_cookies_dict() -> dict:
 
 def modify_json(res_json: dict) -> dict:
     # load default geo_api_info
-    with open(os.path.join('resorce', f'{os.environ["CAMPUS"]}.json'), 'r') as ifile:
+    with open(os.path.join('resource', f'{os.environ["CAMPUS"]}.json'), 'r') as ifile:
         res_json['geo_api_info'] = json.load(ifile)
 
     res_json['province'] = res_json['geo_api_info']['addressComponent']['province']
