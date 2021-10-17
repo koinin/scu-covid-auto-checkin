@@ -3,7 +3,7 @@
 ![auto-checkin](https://github.com/hx-w/scu-covid-auto-checkin/workflows/auto-checkin/badge.svg)
 ![collage](https://img.shields.io/badge/collage-SCU-ff69b4)
 
-本项目力在提供一种对SCU学生每日健康打卡顺利完成的**最后保障**，项目中定时打卡的功能使用GitHub Action实现，不需要自备服务器资源。
+本项目力在提供一种对SCU学生每日健康打卡顺利完成的**最后保障**，项目中定时打卡的功能使用GitHub Action实现，不需要自备服务器资源。
 
 在使用该项目之前你需要了解相关的风险。
 
