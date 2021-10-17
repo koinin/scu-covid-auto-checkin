@@ -3,6 +3,14 @@
 ![auto-checkin](https://github.com/hx-w/scu-covid-auto-checkin/workflows/auto-checkin/badge.svg)
 ![collage](https://img.shields.io/badge/collage-SCU-ff69b4)
 
+本项目力在提供一种对SCU学生每日健康打卡顺利完成的**最后保障**，项目中定时打卡的功能使用GitHub Action实现，不需要自备服务器资源。
+
+在使用该项目之前你需要了解相关的风险。
+
+我只列举其中一条：一旦发现本项目有被滥用的情况，开发者随时准备删库跑路。
+
+打卡脚本的实现原理见：[对SCU网络服务安全性的第一次探索](https://blog.hx-w.top/article/a44f/)
+
 ## 快速开始
 
 1. **fork**本项目，接下来的操作都在你fork后的仓库里操作
