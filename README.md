@@ -2,6 +2,7 @@
 
 ![auto-checkin](https://github.com/hx-w/scu-covid-auto-checkin/workflows/auto-checkin/badge.svg)
 ![collage](https://img.shields.io/badge/collage-SCU-ff69b4)
+![language](https://img.shields.io/badge/language-Python3.9-yellow)
 
 本项目力在提供一种对SCU学生每日健康打卡顺利完成的**最后保障**。
 
