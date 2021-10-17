@@ -7,7 +7,7 @@
 
 1. **fork**本项目，接下来的操作都在你fork后的仓库里操作
 2. 添加环境变量`EAI_SESS`、`UUKEY`和`CAMPUS`
-3. 更改配置文件中的定时信息`.github/workflows/autocheckin.yml`
+3. 更改配置文件中的定时信息`.github/workflows/auto-checkin.yml`
 
 具体操作见：[**详细流程**](#详细流程)
 
@@ -42,6 +42,20 @@
     | `UUKEY` | 获取的`UUkey` |
     | `CAMPUS` | 所在校区，填`wangjiang`、`jiangan`或`huaxi` |
 
+> 现在还未提供`jiangan(江安)`与`huaxi(华西)`的地理位置模板
 ### 修改定时配置
 
+修改`.github/workflows/auto-checkin.yml`
 
+更改`cron`配置，参考：[wiki](https://zh.wikipedia.org/wiki/Cron)
+
+默认的配置是：每天早上8点左右执行脚本
+
+**注意** 执行的时间是UTC时间，北京时间需要在cron对应的小时上再**+8**，所以`0 0 * * *`代表了在每天UTC时间0点0分时触发事件，即每天北京时间8点触发。
+
+```yaml
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+```
