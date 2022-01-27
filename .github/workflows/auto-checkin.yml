@@ -28,4 +28,4 @@ jobs:
         EAI_SESS: ${{ secrets.EAI_SESS }}
         UUKEY: ${{ secrets.UUKEY }}
         CAMPUS: ${{ secrets.CAMPUS }}
-#       run: python3 checkin.py # don't checkin during holidays
+      run: python3 checkin.py # don't checkin during holidays
