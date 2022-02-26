@@ -1,6 +1,9 @@
 # **四川大学健康每日报自动打卡工作流**
 
-![auto-checkin](https://github.com/hx-w/scu-covid-auto-checkin/workflows/auto-checkin/badge.svg)
+changlog
+- 添加江安校区
+- 删除不必要的 import
+
 ![collage](https://img.shields.io/badge/collage-SCU-ff69b4)
 ![language](https://img.shields.io/badge/language-Python3.9-yellow)
 
@@ -53,7 +56,7 @@
     | `UUKEY` | 获取的`UUkey` |
     | `CAMPUS` | 所在校区，填`wangjiang`、`jiangan`或`huaxi` |
 
-> 现在还未提供`jiangan(江安)`与`huaxi(华西)`的地理位置模板
+> 现在还未提供`huaxi(华西)`的地理位置模板
 ### 修改定时配置
 
 修改`.github/workflows/auto-checkin.yml`
