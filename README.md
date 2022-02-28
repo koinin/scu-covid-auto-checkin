@@ -14,5 +14,6 @@ changlog
 打卡情况: new Vue 里面的 hasFlag
 
 已打卡 `hasFlag: '1',`
+未打卡 `hasFlag: '',`
 
 `hasFlag: '(\d)',`
