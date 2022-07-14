@@ -1,0 +1,46 @@
+{
+    "type": "complete",
+    "position": {
+        "Q": 30.55386,
+        "R": 103.991717,
+        "lng": 103.991717,
+        "lat": 30.55386
+    },
+    "location_type": "ip",
+    "message": "Get ipLocation success.Get address success.",
+    "accuracy": null,
+    "isConverted": true,
+    "status": 1,
+    "addressComponent": {
+        "citycode": "028",
+        "adcode": "510116",
+        "businessAreas": [
+            {
+                "name": "白家",
+                "id": "510116",
+                "location": {
+                    "Q": 30.562482,
+                    "R": 104.006821,
+                    "lng": 104.006821,
+                    "lat": 30.562482
+                }
+            }
+        ],
+        "neighborhoodType": "",
+        "neighborhood": "",
+        "building": "",
+        "buildingType": "",
+        "street": "长城路一段",
+        "streetNumber": "141号",
+        "country": "中国",
+        "province": "四川省",
+        "city": "成都市",
+        "district": "双流区",
+        "township": "西航港街道"
+    },
+    "formattedAddress": "四川省成都市双流区西航港街道四川大学江安校区西园10舍",
+    "roads": [],
+    "crosses": [],
+    "pois": [],
+    "info": "SUCCESS"
+}
