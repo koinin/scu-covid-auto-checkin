@@ -1,9 +1,5 @@
 # **四川大学健康每日报自动打卡工作流**
 
-![auto-checkin](https://github.com/hx-w/scu-covid-auto-checkin/workflows/auto-checkin/badge.svg)
-![collage](https://img.shields.io/badge/collage-SCU-ff69b4)
-![language](https://img.shields.io/badge/language-Python3.9-yellow)
-
 本项目力在提供一种对SCU学生每日健康打卡顺利完成的**最后保障**。
 
 项目中定时打卡的功能使用GitHub Action实现，不需要自备服务器资源。
@@ -53,7 +49,7 @@
     | `UUKEY` | 获取的`UUkey` |
     | `CAMPUS` | 所在校区，填`wangjiang`、`jiangan`或`huaxi` |
 
-> 现在还未提供`jiangan(江安)`与`huaxi(华西)`的地理位置模板
+> 现在还未提供`huaxi(华西)`的地理位置模板
 ### 修改定时配置
 
 修改`.github/workflows/auto-checkin.yml`
