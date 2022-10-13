@@ -53,7 +53,7 @@
     | `UUKEY` | 获取的`UUkey` |
     | `CAMPUS` | 所在校区，填`wangjiang`、`jiangan`或`huaxi` |
 
-> 现在还未提供`jiangan(江安)`与`huaxi(华西)`的地理位置模板
+> 现在还未提供`huaxi(华西)`的地理位置模板
 ### 修改定时配置
 
 修改`.github/workflows/auto-checkin.yml`
